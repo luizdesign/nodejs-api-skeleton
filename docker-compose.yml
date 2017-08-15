@@ -6,7 +6,7 @@ services:
         ports:
             - "3000:3000"
         volumes:
-            - ./api:/var/www/api/
+            - ./Api:/var/www/Api/
             - ./package.json:/var/www/package.json
         command: npm start
 
