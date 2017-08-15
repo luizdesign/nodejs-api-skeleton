@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-api-skeleton",
+  "version": "0.1.0",
+  "description": "A skeleton to start Api projects with node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "keywords": [
+    "skeleton",
+    "api",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
