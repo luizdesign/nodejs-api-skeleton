@@ -1,12 +1,12 @@
 version: '3'
 services:
-    api:
-        container_name: api
-        build: .
-        ports:
-            - "3000:3000"
-        volumes:
-            - ./Api:/var/www/Api/
-            - ./package.json:/var/www/package.json
-        command: npm start
+  api:
+    container_name: api
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Api:/var/www/Api/
+      - ./package.json:/var/www/package.json
+    command: npm start
 
