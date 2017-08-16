@@ -25,3 +25,5 @@ docker-compose up --build
 
 ## Contribute
 You can contribute to improve the project by [opening issues](https://github.com/luizdesign/nodejs-api-skeleton/issues/new), and submitting [pull requests](https://github.com/luizdesign/nodejs-api-skeleton/pulls). However check the [issue list](https://github.com/luizdesign/nodejs-api-skeleton/issues) before to avoid duplicate issues.
+
+Remember always on to check the [contribution guide](https://github.com/luizdesign/nodejs-api-skeleton/blob/master/CONTRIBUTING.md).
