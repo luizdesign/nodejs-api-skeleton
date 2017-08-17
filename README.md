@@ -17,10 +17,19 @@ To run the project, execute the command:
 docker-compose up
 ```
 
+After it you can access [http://localhost:3000/healthcheck/](http://localhost:3000/healthcheck/).
+
 ## Rebuild Docker image
 To rebuild the docker image, run the command below. It's necessary to build a new image with your changes.
 ```sh
 docker-compose up --build
+```
+
+Or you can remove and create a new image:
+```sh
+docker images #returns all local docker images
+docker rm $dockerImageName #remove the image named $dockerImageName
+docker-compose up #recreate the image
 ```
 
 ## Contribute
