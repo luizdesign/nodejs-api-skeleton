@@ -5,13 +5,23 @@ A simple skeleton to start projects using Node.js.
 - [Docker](https://www.docker.com): v17.06.0
 - [Docker Compose](https://docs.docker.com/compose/): v1.14.0
 
+## Structure
+The Api have the structure below:
+```md
+├── Api/
+│   ├── Routes/
+│   └── Controllers/
+├── Dockerfile
+└── docker-compose.yml
+```
+
 ## Development
 To start the development, clone the project, edit the files and [run the project](#running).
 ```sh
 git clone git@github.com:luizdesign/nodejs-api-skeleton.git
 ```
 
-## Running
+### Running
 To run the project, execute the command:
 ```sh
 docker-compose up
@@ -19,7 +29,7 @@ docker-compose up
 
 After it you can access [http://localhost:3000/healthcheck/](http://localhost:3000/healthcheck/).
 
-## Rebuild Docker image
+### Rebuild Docker image
 To rebuild the docker image, run the command below. It's necessary to build a new image with your changes.
 ```sh
 docker-compose up --build
