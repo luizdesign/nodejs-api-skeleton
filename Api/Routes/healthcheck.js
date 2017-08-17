@@ -1,8 +1,6 @@
+// Import controllers
+const Controllers = require('../Controllers/index.js');
+
 module.exports = (api) => {
-    api.get('/healthcheck/', (req, res) => {
-        res.json({
-            status: true,
-            message: 'API ok!'
-        });
-    });
+    api.get('/healthcheck/', Controllers.HealthcheckController.get);
 };
