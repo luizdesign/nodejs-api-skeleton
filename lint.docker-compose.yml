@@ -7,4 +7,5 @@ services:
       - ./Api:/var/www/Api/
       - ./package.json:/var/www/package.json
       - ./.eslintrc.js:/var/www/.eslintrc.js
-    command: npm run lint
+      - ./node_modules:/var/www/node_modules
+    command: sh -c "npm install && npm run lint"
