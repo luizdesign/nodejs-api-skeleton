@@ -2,6 +2,6 @@
 const HealthcheckRoutes = require('./healthcheck.js');
 
 module.exports = (api) => {
-    //Register healthcheck routes
+    // Register healthcheck routes
     HealthcheckRoutes(api);
-}
+};
