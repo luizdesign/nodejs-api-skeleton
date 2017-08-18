@@ -1,0 +1,9 @@
+version: '3'
+services:
+  lint:
+    container_name: lint
+    build: .
+    volumes:
+      - ./Api:/var/www/Api/
+      - ./.eslintrc.js:/var/www/.eslintrc.js
+    command: npm run lint
