@@ -5,5 +5,6 @@ services:
     build: .
     volumes:
       - ./Api:/var/www/Api/
+      - ./package.json:/var/www/package.json
       - ./.eslintrc.js:/var/www/.eslintrc.js
     command: npm run lint
