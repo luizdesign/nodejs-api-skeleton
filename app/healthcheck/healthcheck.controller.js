@@ -1,10 +1,8 @@
 module.exports = {
-    get
+    get(req, res) {
+        res.json({
+            status: true,
+            message: 'API ok!'
+        });
+    }
 };
-
-function get(req, res) {
-    res.json({
-        status: true,
-        message: 'API ok!'
-    });
-}
