@@ -1,6 +1,6 @@
 const express = require('express');
 const cluster = require('cluster');
-const routes = require('./Routes/');
+const healthcheck = require('./healthcheck/healthcheck.router');
 const api = express();
 
 // Master process
@@ -14,7 +14,7 @@ if (cluster.isMaster) {
     }
 // Worker process
 } else {
-    routes(api);
+    api.use(healthcheck);
 
     api.listen(
         3000,

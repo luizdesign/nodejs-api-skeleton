@@ -1,5 +1,5 @@
 module.exports = {
-    get: (req, res) => {
+    get(req, res) {
         res.json({
             status: true,
             message: 'API ok!'

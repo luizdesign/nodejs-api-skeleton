@@ -4,6 +4,8 @@ services:
     container_name: lint
     build: .
     volumes:
-      - ./Api:/var/www/Api/
+      - ./app:/var/www/app/
+      - ./package.json:/var/www/package.json
       - ./.eslintrc.js:/var/www/.eslintrc.js
-    command: npm run lint
+      - ./node_modules:/var/www/node_modules
+    command: sh -c "npm install && npm run lint"

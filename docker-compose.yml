@@ -5,7 +5,9 @@ services:
     build: .
     ports:
       - "3000:3000"
+    working_dir: /var/www/
     volumes:
-      - ./Api:/var/www/Api/
-    command: npm start
-
+      - ./app:/var/www/app/
+      - ./package.json:/var/www/package.json
+      - ./node_modules:/var/www/node_modules
+    command: sh -c "npm install && npm start"

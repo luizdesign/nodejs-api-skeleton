@@ -4,8 +4,8 @@
   "description": "A skeleton to start Api projects with node.js",
   "main": "index.js",
   "scripts": {
-    "start": "node Api/index.js",
-    "lint": "node_modules/.bin/eslint ./Api/**/*.js",
+    "start": "node app/index.js",
+    "lint": "node_modules/.bin/eslint ./app/**/*.js",
     "precommit": "docker-compose -f lint.docker-compose.yml up"
   },
   "keywords": [
