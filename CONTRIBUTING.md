@@ -45,3 +45,4 @@ Open your pull request, if you don't know how do it, check this [tutorial](https
 
 For the good manutance of the project, follow all the code styles:
 - [Editorconfig](https://github.com/luizdesign/nodejs-api-skeleton/blob/master/.editorconfig)
+- [Eslint Airbnb](https://github.com/luizdesign/nodejs-api-skeleton/blob/master/.eslintrc.js)
