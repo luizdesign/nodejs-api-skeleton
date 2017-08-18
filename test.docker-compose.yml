@@ -1,0 +1,11 @@
+version: '3'
+services:
+  integration_test:
+    container_name: integration_test
+    build: .
+    network_mode: host
+    volumes:
+      - ./app:/var/www/app/
+      - ./package.json:/var/www/package.json
+      - ./node_modules:/var/www/node_modules
+    command: sh -c "npm install && npm run integration-test"
