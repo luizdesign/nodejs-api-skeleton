@@ -4,7 +4,9 @@
   "description": "A skeleton to start Api projects with node.js",
   "main": "index.js",
   "scripts": {
-    "start": "node Api/index.js"
+    "start": "node Api/index.js",
+    "lint": "node_modules/.bin/eslint ./Api/**/*.js",
+    "precommit": "docker-compose -f lint.docker-compose.yml up"
   },
   "keywords": [
     "skeleton",
@@ -15,5 +17,13 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "husky": "^0.14.3"
   }
 }
