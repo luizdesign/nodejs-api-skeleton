@@ -4,7 +4,7 @@ services:
     container_name: lint
     build: .
     volumes:
-      - ./Api:/var/www/Api/
+      - ./app:/var/www/app/
       - ./package.json:/var/www/package.json
       - ./.eslintrc.js:/var/www/.eslintrc.js
       - ./node_modules:/var/www/node_modules
