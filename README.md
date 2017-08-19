@@ -42,6 +42,20 @@ docker rm $dockerImageName #remove the image named $dockerImageName
 docker-compose up #recreate the image
 ```
 
+## Test
+You can run some tests to ensure the code.
+
+### Integration Tests
+Integration test access the api and check te return. To execute them, run the commands below.
+```sh
+# up the Api
+docker-compose up
+
+# run the integration test
+docker-compose -f test.docker-compose.yml up
+```
+
+
 ## Contribute
 You can contribute to improve the project by [opening issues](https://github.com/luizdesign/nodejs-api-skeleton/issues/new), and submitting [pull requests](https://github.com/luizdesign/nodejs-api-skeleton/pulls). However check the [issue list](https://github.com/luizdesign/nodejs-api-skeleton/issues) before to avoid duplicate issues.
 

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node app/index.js",
     "lint": "node_modules/.bin/eslint ./app/**/*.js",
+    "integration-test": "node_modules/.bin/mocha ./app/**/test/integration.test.js",
     "precommit": "docker-compose -f lint.docker-compose.yml up"
   },
   "keywords": [
@@ -24,6 +25,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
   }
 }
