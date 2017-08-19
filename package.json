@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app/index.js",
-    "lint": "node_modules/.bin/eslint ./app/**/*.js",
+    "lint": "node_modules/.bin/eslint ./app/** --ext .js",
     "integration-test": "node_modules/.bin/mocha ./app/**/test/integration.test.js",
     "precommit": "docker-compose -f lint.docker-compose.yml up"
   },
