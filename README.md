@@ -8,9 +8,12 @@ A simple skeleton to start projects using Node.js.
 ## Structure
 The Api have the structure below:
 ```md
-├── Api/
-│   ├── Routes/
-│   └── Controllers/
+├── app/
+│   ├── NamespaceProject (healthcheck example)  
+│   │   ├── test/
+│   │   ├── namespaceProject.controller.js
+│   │   └── namespaceProject.router.js
+│   └── index.js
 ├── Dockerfile
 └── docker-compose.yml
 ```
